@@ -1,1 +1,291 @@
 
+      @font-face {
+        font-family: romance;
+        src: url('font/ZilapRomancePersonalUse.ttf');
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        color: #242424;
+        background: #242424;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Sans-Serif;
+        width: 100vw;
+        height: 100vh;
+      }
+      
+      .name {
+        font-size: 28pt;
+        letter-spacing: 1px;
+      }
+      .bold {
+        font-size: 13.5pt;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+      .read {
+        font-size: 12pt;
+        letter-spacing: 1px;
+      }
+      
+      button {
+        position: absolute;
+        top: 18%;
+        width: 180px;
+        height: 50px;
+        border-radius: 26px;
+        border: none;
+        outline: none;
+        font-size: 26px;
+        line-height: 50px;
+        background-color: darkseagreen;
+        color: #242424;
+      }
+      .isoA4 {
+        position: relative;
+        width: 21cm;
+        height: 29.7cm;
+        background-color: snow;
+        overflow: hidden;
+      }
+      
+      .top-title,
+      .bottom-title {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 148px;
+        color: #242424;
+        font-family: romance;
+        font-size: 140px;
+        font-weight: bolder;
+        letter-spacing: 2.4px;
+        text-align: center;
+        z-index: 1;
+      }
+      .top-title {
+        top: -74px;
+      }
+      .bottom-title {
+        bottom: -74px;
+      }
+      
+      .aside {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 38%;
+        height: 100%;
+      }
+      .aside .pr-in-co {
+        position: absolute;
+        width: 100%;
+        height: 75%;
+        padding-left: 24px;
+      }
+      .pr-in-co .my-pic {
+        position: absolute;
+        top: -36px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 150px;
+        background-image: url('images/card-bg.png');
+        background-size: cover;
+        border-radius: 50%;
+      }
+      
+      .pr-in-co .about {
+        position: absolute;
+        top: 180px;
+        width: 92%;
+        height: 240px;
+        text-align: center;
+      }
+      .about .a-line {
+        position: absolute;
+        top: 27px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 54px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: #242424;
+      }
+      .about .margin {
+        margin-top: 24px;
+      }
+      
+      .pr-in-co .interest {
+        position: absolute;
+        bottom: 242px;
+        width: 92%;
+        height: 146px;
+        text-align: center;
+      }
+      .interest .i-line {
+        position: absolute;
+        top: 27px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 54px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: #242424;
+      }
+      .interest .left {
+        float: left;
+      }
+      .interest .margin {
+        margin-top: 24px;
+      }
+      
+      .pr-in-co .contact {
+        position: absolute;
+        bottom: 0;
+        width: 92%;
+        height: 204px;
+        text-align: center;
+      }
+      .contact .c-line {
+        position: absolute;
+        top: 27px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 54px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: #242424;
+      }
+      .contact .margin {
+        margin-top: 24px;
+      }
+      .contact img {
+        position: relative;
+        width: 24px;
+      }
+      
+      .main {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 0;
+        right: 0;
+        width: 62%;
+        height: 100%;
+      }
+      .main .profile {
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        padding-top: 12px;
+        padding-left: 50px;
+      }
+      
+      .profile .edu {
+        position: absolute;
+        top: 110px;
+        width: 100%;
+        height: 300px;
+      }
+      .edu .box {
+        position: absolute;
+        width: 180px;
+        height: 36px;
+        line-height: 36px;
+        background-color: #242424;
+        color: #fff;
+        text-align: center;
+        border-radius: 24px;
+      }
+      .edu .b-line {
+        position: absolute;
+        top: 34px;
+        left: 18px;
+        width: 100%;
+        height: 2px;
+        background-color: #242424;
+      }
+      .edu .margin {
+        margin-top: 18px;
+      }
+      
+      .profile .work-exp {
+        position: absolute;
+        top: 440px;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 24px;
+      }
+      .work-exp .box {
+        position: absolute;
+        width: 250px;
+        height: 36px;
+        line-height: 36px;
+        background-color: #242424;
+        color: #fff;
+        text-align: center;
+        border-radius: 24px;
+      }
+      .work-exp .b-line {
+        position: absolute;
+        top: 34px;
+        left: 18px;
+        width: 90%;
+        height: 2px;
+        background-color: #242424;
+      }
+      .work-exp .margin {
+        margin-top: 18px;
+      }
+      
+      .profile .skills {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 130px;
+      }
+      .skills .box {
+        position: absolute;
+        width: 180px;
+        height: 36px;
+        line-height: 36px;
+        background-color: #242424;
+        color: #fff;
+        text-align: center;
+        border-radius: 24px;
+      }
+      .skills .b-line {
+        position: absolute;
+        top: 34px;
+        left: 18px;
+        width: 90%;
+        height: 2px;
+        background-color: #242424;
+      }
+      .skills .left {
+        float: left;
+        margin-right: 130px;
+      }
+      .skills .margin {
+        margin-top: 18px;
+      }
+      
+      @media print {
+        button {
+          display: none;
+        }
+        .isoA4 {
+          top: -170px;
+          transform: scale(0.9);
+        }
+      }
